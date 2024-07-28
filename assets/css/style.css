@@ -396,6 +396,35 @@ h1 span {
   font-size: 0.9rem;
 }
 
+/* project card actions begins here  */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px;
+}
+
+.card-actions a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+}
+
+.card-actions a svg {
+  margin-right: 5px;
+}
+
+.card-actions a:hover {
+  text-decoration: underline;
+}
+
+.card-actions a .icon-preview {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 nav .fas {
   display: none;
 }
