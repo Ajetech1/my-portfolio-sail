@@ -39,14 +39,20 @@ header {
   height: 40px;
 }
 
-header nav ul {
-  display: flex;
+/* header nav ul {
+  display: block;
   list-style: none;
+} */
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
-header nav ul li {
+/* header nav ul li {
   margin-left: 2rem;
-}
+} */
 
 header nav ul li a {
   text-decoration: none;
@@ -55,7 +61,7 @@ header nav ul li a {
   position: relative;
 }
 
-nav ul li a::after {
+header nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -245,6 +251,12 @@ form .btn2 {
   color: #fff;
 }
 
+#msg {
+  margin-top: -40px;
+  color: #61b752;
+  display: block;
+}
+
 /* Hero Section Styles */
 
 .hero {
@@ -384,34 +396,6 @@ h1 span {
   font-size: 0.9rem;
 }
 
-/* Footer Styles */
-footer {
-  background: #333;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer p {
-  margin-bottom: 1rem;
-}
-
-footer .social-links {
-  display: flex;
-  gap: 1rem;
-}
-
-footer .social-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
 nav .fas {
   display: none;
 }
@@ -422,8 +406,8 @@ nav .fas {
     font-size: 25px;
   }
 
-  nav ul {
-    background: #ff004f;
+  header nav ul {
+    background: #fff;
     position: fixed;
     top: 0;
     right: -200px;
@@ -434,12 +418,17 @@ nav .fas {
     transition: right 0.5s;
   }
 
-  nav ul li {
+  header nav ul li {
     display: block;
     margin: 25px;
   }
 
-  nav ul .fas {
+  header nav ul li a {
+    color: #333;
+    font-weight: bold;
+  }
+
+  header nav ul .fas {
     position: absolute;
     top: 25px;
     left: 25px;
@@ -447,20 +436,20 @@ nav .fas {
   }
 
   .content {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: center;
-    text-align: center; /* Center text on mobile */
+    text-align: center;
   }
 
   .content img {
-    order: 1; /* Image first */
-    margin-left: 0; /* Reset margin for mobile */
-    margin-bottom: 20px; /* Space between image and text */
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
 
   h1 {
-    order: 2; /* Text second */
-    text-align: center; /* Center text on mobile */
+    order: 2;
+    text-align: center;
   }
 
   .tech-stack .tech-icons {
