@@ -39,20 +39,11 @@ header {
   height: 40px;
 }
 
-/* header nav ul {
-  display: block;
-  list-style: none;
-} */
-
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
-
-/* header nav ul li {
-  margin-left: 2rem;
-} */
 
 header nav ul li a {
   text-decoration: none;
@@ -242,13 +233,13 @@ form .btn2 {
 }
 
 .copyright {
-  background: #262626;
+  background: #fff;
   text-align: center;
   margin-top: 20px;
   font-size: 300;
   width: 100%;
   padding: 25px 0;
-  color: #fff;
+  color: #333;
 }
 
 #msg {
@@ -300,7 +291,7 @@ h1 span {
 /* Tech Stack Section Styles */
 .tech-stack {
   background: #f9f9f9;
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -328,7 +319,7 @@ h1 span {
 
 /* Projects Section Styles */
 .projects {
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
