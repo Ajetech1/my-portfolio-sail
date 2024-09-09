@@ -202,10 +202,10 @@ p {
   transition: backgrounds 0.5s;
 }
 
-.btn.btn2 {
+/* .btn.btn2 {
   display: inline-block;
   background: #ff004f;
-}
+} */
 
 /* contact right begins here */
 .contact-right form {
@@ -229,6 +229,44 @@ form .btn2 {
   margin-top: 20px;
   font-size: 18px;
   padding: 14px 60px;
+  cursor: pointer;
+}
+
+/* Spinner styling */
+.spinner {
+  /* border: 3px solid rgba(255, 255, 255, 0.3); */
+  border: #e70faa;
+  border-top: 3px solid red;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s linear infinite;
+  display: none; /* Initially hidden */
+  margin-left: 10px; /* Space between button and spinner */
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Aligning button and spinner */
+.btn-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Add some margin to the button */
+.btn.btn2 {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 14px 60px;
+  background: #ff004f;
   cursor: pointer;
 }
 
