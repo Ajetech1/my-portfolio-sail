@@ -46,7 +46,8 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">Contact me</h1>
+            <h1 class="sub-title">Welcome to jeleel's giveaway page</h1>
+            <p>🎉🎂🎀𝐻𝒶𝓅𝓅𝓎 𝒷𝒾𝓇𝓉𝒽𝒹𝒶𝓎 to Me.💗🥳🎂</p>
             <p>
               <i class="fa-solid fa-paper-plane"></i>jeleelajetunmobi@gmail.com
             </p>
@@ -68,35 +69,85 @@
                 ><i class="fa-custom"></i
               ></a>
             </div>
-            <a href="assets/img/JELEEL OLOYEDE AJETUNMOBI.pdf" class="btn btn2"
-              >Download Cv</a
-            >
+            <a href="" class="btn btn2">Download Cv</a>
           </div>
+
+          <div class="contact-left">
+            <h1 class="sub-title">
+              Read The Following Questions And Use Below form To Provide Simple
+              Replies
+            </h1>
+            <p>
+              1. If you see around what name will first comes into your mind to
+              call me?
+            </p>
+            <p>2. Where did we meet and in what year?</p>
+            <p>3. Which of my nickname do you know?</p>
+            <p>4. Which city did i comes from?</p>
+            <p>5. What is my current specialization?</p>
+            <p>6. Have i ever render any help to you Yes/No?</p>
+            <p>7. In just a word describe what you know about?</p>
+            <p>
+              8. Is there anything you would want me to adjust and correct about
+              life?
+            </p>
+            <p>ᵗᑋᵃᐢᵏ ᵞᵒᵘ All🎀🫶🏻💌💓</p>
+          </div>
+
           <div class="contact-right">
             <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
-              <input
+
+              <!-- <input
                 type="email"
                 name="Email"
                 placeholder="Your Email"
                 required
+              /> -->
+
+              <input
+                type="tel"
+                name="Phone"
+                placeholder="Your Phone Number"
+                required
               />
+
+              <!-- Selection Option (Dropdown) -->
+              <select name="Inquiry" required>
+                <option value="" disabled selected>
+                  Select Service Provider
+                </option>
+                <option value="Mtn">MTN</option>
+                <option value="Airtel">Airtel</option>
+                <option value="glo">Glo</option>
+                <option value="other">Other</option>
+              </select>
+
+              <!-- Selection Option (Dropdown) -->
+              <select name="Choice" required>
+                <option value="" disabled selected>Select Give-away</option>
+                <option value="Airtime">Airtime</option>
+                <option value="Data">Data</option>
+                <option value="other">Other</option>
+              </select>
+
               <textarea
                 name="Message"
                 rows="6"
-                placeholder="Your Message"
+                placeholder="Type Your Answers here....."
                 required
               ></textarea>
               <!-- <button type="submit" class="btn btn2">Submit</button> -->
-            </form>
 
-            <!-- Spinner container -->
-            <div class="btn-container">
-              <button type="submit" class="btn btn2">
-                Submit
+              <!-- Spinner and Submit Button -->
+              <div class="btn-container">
+                <button type="submit" class="btn btn2" id="submit-button">
+                  Submit
+                </button>
                 <div class="spinner" id="spinner"></div>
-              </button>
-            </div>
+                <!-- Separate spinner outside button -->
+              </div>
+            </form>
             <span id="msg"></span>
           </div>
         </div>

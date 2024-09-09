@@ -35,26 +35,33 @@ const scriptURL =
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
 const spinner = document.getElementById("spinner");
+const submitButton = document.getElementById("submit-button");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Show the spinner
+  // Disable submit button and show spinner
+  submitButton.disabled = true;
   spinner.style.display = "inline-block";
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      msg.innerHTML = "Message sent successfully";
+      msg.innerHTML =
+        "Message sent successfully, Thank you for celebrating my birthday🎁🎂🎀💗";
       setTimeout(function () {
         msg.innerHTML = "";
       }, 5000);
       form.reset();
-      // Hide the spinner after response
+
+      // Re-enable button and hide spinner
+      submitButton.disabled = false;
       spinner.style.display = "none";
     })
     .catch((error) => {
       console.error("Error!", error.message);
-      // Hide the spinner in case of error
+
+      // Re-enable button and hide spinner on error
+      submitButton.disabled = false;
       spinner.style.display = "none";
     });
 });

@@ -202,10 +202,10 @@ p {
   transition: backgrounds 0.5s;
 }
 
-/* .btn.btn2 {
+.btn.btn2 {
   display: inline-block;
   background: #ff004f;
-} */
+}
 
 /* contact right begins here */
 .contact-right form {
@@ -213,7 +213,8 @@ p {
 }
 
 form input,
-form textarea {
+form textarea,
+select {
   width: 100%;
   border: 0;
   outline: none;
@@ -235,11 +236,11 @@ form .btn2 {
 /* Spinner styling */
 .spinner {
   /* border: 3px solid rgba(255, 255, 255, 0.3); */
-  border: #e70faa;
-  border-top: 3px solid red;
+  border: #262626;
+  border-top: 3px solid #ff004f; /* Green color for the top border */
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   animation: spin 1s linear infinite;
   display: none; /* Initially hidden */
   margin-left: 10px; /* Space between button and spinner */
@@ -258,16 +259,7 @@ form .btn2 {
 /* Aligning button and spinner */
 .btn-container {
   display: flex;
-  align-items: center;
-}
-
-/* Add some margin to the button */
-.btn.btn2 {
-  margin-top: 20px;
-  font-size: 18px;
-  padding: 14px 60px;
-  background: #ff004f;
-  cursor: pointer;
+  align-items: left;
 }
 
 .copyright {
@@ -284,6 +276,7 @@ form .btn2 {
   margin-top: -40px;
   color: #61b752;
   display: block;
+  text-align: center;
 }
 
 /* Hero Section Styles */
