@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       msg.innerHTML =
-        "Message sent successfully, Thank you for celebrating my birthday🎁🎂🎀💗";
+        "Message sent successfully, We will get back to you as soon as possible.";
       setTimeout(function () {
         msg.innerHTML = "";
       }, 5000);
