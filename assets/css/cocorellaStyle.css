@@ -1,0 +1,153 @@
+/* cocorella product feedback */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 50%;
+  background-color: #564038;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Adjust width as needed */
+}
+
+/* Spinner styling */
+.spinner {
+  /* border: 3px solid rgba(255, 255, 255, 0.3); */
+  border: #262626;
+  border-top: 3px solid #564038; /* Green color for the top border */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: none; /* Initially hidden */
+  margin-left: 10px; /* Space between button and spinner */
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Aligning button and spinner */
+.btn-container {
+  display: flex;
+  align-items: left;
+  margin: 15px 0;
+}
+
+#msg {
+  margin-top: 10px;
+  color: #61b752;
+  display: block;
+  text-align: center;
+}
+
+.copyright {
+  background: #564038;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #218838;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
