@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocorella Product Review Form</title>
+    <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/cocorellaStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/38b421c4ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>7-Day Free web Design Bootcamp</h2>
+      <p>Sponsored By AjetechITSolutions</p>
+
+      <!-- <img src="assets/img/cocorella.png" alt="" class="logo" /> -->
+
+      <form name="submit-to-google-sheet">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="Name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="text"
+            id="phone"
+            name="Phone"
+            placeholder="Enter your whatsapp number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Your Location:</label>
+          <input
+            type="text"
+            id="location"
+            name="Location"
+            placeholder="E.g Lagos, Osun ,Ede"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="device"
+            >Which device will you use for the bootcamp?</label
+          >
+          <select id="device" name="Device" required>
+            <option value="" disabled selected>Please select one</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Desktop">Desktop</option>
+            <option value="Phone">Phone</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message"
+            >Why should you be considered for this bootcamp?</label
+          >
+          <textarea
+            id="message"
+            name="Message"
+            rows="4"
+            placeholder="Answer in 50 words or less."
+            required
+          ></textarea>
+          <!-- Spinner and Submit Button -->
+          <div class="btn-container">
+            <button type="submit" class="btn btn2" id="submit-button">
+              Submit
+            </button>
+            <div class="spinner" id="spinner"></div>
+          </div>
+        </div>
+
+        <!-- <button type="submit">Submit Review</button> -->
+      </form>
+      <span id="msg"></span>
+      <div class="copyright">
+        Designed By <a href="index.html" class="link">AjetechITSolutions</a> ©
+        2025.
+      </div>
+    </div>
+
+    <script src="bootcamp.js"></script>
+  </body>
+</html>
