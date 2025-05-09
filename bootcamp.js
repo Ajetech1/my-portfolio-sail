@@ -15,10 +15,10 @@ form.addEventListener("submit", (e) => {
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       msg.innerHTML =
-        "Thank you! Your application was submitted. We'll contact you within 2 weeks.";
+        'Thank you! Your application was submitted. <a href="https://chat.whatsapp.com/GOQTAublmqW3nGYPpnSi0i" target="_blank">Click here to join our WhatsApp group</a>';
       setTimeout(function () {
         msg.innerHTML = "";
-      }, 5000);
+      }, 10000);
       form.reset();
 
       // Re-enable button and hide spinner
